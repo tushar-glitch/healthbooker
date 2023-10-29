@@ -15,13 +15,7 @@ const AboutUs = () => {
           </div>
           <div className="hero-content">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam tenetur doloremque molestias repellat minus asperiores
-              in aperiam dolor, quaerat praesentium. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Voluptatibus, repudiandae! Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Provident
-              quibusdam doloremque ex? Officia atque ab dolore? Tempore totam
-              non ea!
+            At HealthBooker, we are a dedicated team of healthcare professionals committed to providing exceptional and compassionate medical services. With a focus on patient-centric care, we aim to foster a welcoming environment where your health and well-being take center stage. Our mission is to be your trusted partner on your path to a healthier life, delivering quality healthcare that prioritizes your needs. Learn more about our team and our unwavering dedication to enhancing lives through expert medical care.
             </p>
           </div>
         </div>
