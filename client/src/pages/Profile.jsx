@@ -8,7 +8,7 @@ import Loading from "../components/Loading";
 import fetchData from "../helper/apiCall";
 import jwt_decode from "jwt-decode";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+// axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
 
 function Profile() {
   const { userId } = jwt_decode(localStorage.getItem("token"));
@@ -83,7 +83,7 @@ function Profile() {
       }
       await toast.promise(
         axios.put(
-          "/user/updateprofile",
+          `${process.env.REACT_APP_SERVER_DOMAIN}/user/updateprofile`,
           {
             firstname,
             lastname,

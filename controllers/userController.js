@@ -69,6 +69,7 @@ const register = async (req, res) => {
 };
 
 const updateprofile = async (req, res) => {
+  console.log('asdf');
   try {
     const hashedPass = await bcrypt.hash(req.body.password, 10);
     const result = await User.findByIdAndUpdate(
@@ -82,6 +83,7 @@ const updateprofile = async (req, res) => {
   } catch (error) {
     res.status(500).send("Unable to update user");
   }
+  console.log('asdf');
 };
 
 const deleteuser = async (req, res) => {
