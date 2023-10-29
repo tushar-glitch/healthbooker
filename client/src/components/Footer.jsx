@@ -72,7 +72,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Avinash
+            Vibhu Yadav, Utkarsh Rai and Tushar Chauhan
           </a>{" "}
           © {new Date().getFullYear()}
         </div>
