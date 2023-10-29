@@ -41,7 +41,7 @@ function Login() {
         password: password
       }
       const { data } = await toast.promise(
-        axios.post("http://localhost:5000/api/user/login", {
+        axios.post(`${process.env.REACT_APP_SERVER_DOMAIN}/user/login`, {
           email,
           password,
         }),
@@ -72,7 +72,7 @@ function Login() {
 
   const getUser = async (id) => {
     try {
-      const temp = await fetchData(`http://localhost:5000/api/user/getuser/${id}`);
+      const temp = await fetchData(`${process.env.REACT_APP_SERVER_DOMAIN}/user/getuser/${id}`);
       dispatch(setUserInfo(temp));
       return navigate("/");
     } catch (error) {
